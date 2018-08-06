@@ -1,0 +1,302 @@
+/*
+font-family: 'Palanquin Dark', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Alegreya', serif;
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.pics {
+  display: block;
+  border: 0;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.text-over-pic {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.text-over-pic .main-navigation {
+  background-color: #00606f;
+  padding: 1%;
+  border-radius: 4px;
+  opacity: 0.5;
+  position: absolute;
+  top: 7%;
+  left: 54%;
+}
+.text-over-pic .main-navigation a {
+  text-decoration: none;
+  color: white;
+}
+.text-over-pic .banner {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -999;
+}
+@media ( max-width: 800px ) {
+  .none {
+    display: none;
+  }
+}
+.drop-down {
+  display: none;
+}
+@media ( max-width: 800px ) {
+  .drop-down {
+    position: absolute;
+    top: 3%;
+    left: 72%;
+    display: block;
+  }
+}
+@media ( max-width: 800px ) {
+  .drop-down .drop-down-image {
+    display: block;
+  }
+}
+.drop-down .drop-down-image:hover + .hover-nav {
+  display: flex;
+  flex-direction: column;
+}
+.drop-down .hover-nav:hover {
+  display: flex;
+  flex-direction: column;
+}
+.drop-down .hover-nav {
+  display: none;
+}
+.drop-down .hover-nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 3%;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
+.drop-down .hover-nav a:hover {
+  display: flex;
+  background-color: white;
+  color: black;
+}
+.main-heading {
+  font-size: 2.5rem;
+  background-color: #dec8b9;
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+  color: #3e3934;
+  border-top: solid #e09999 4px;
+  border-bottom: solid black 1px;
+}
+.main-heading h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.home .intro {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.home .intro h2 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home .intro p {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 3%;
+}
+.home .my-works h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.home .my-works a {
+  text-decoration: none;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: red;
+}
+.home .my-works .flex-box {
+  width: 100%;
+  display: flex;
+}
+@media ( max-width: 500px ) {
+  .home .my-works .flex-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.home .my-works .flex-box .my-works-section {
+  width: 100%;
+  font-size: 2rem;
+  padding: 10px 1% 10px 1%;
+  margin: 10px 1% 10px 1%;
+  border: solid black 2px;
+  transition: 0.3s ease;
+}
+@media ( max-width: 500px ) {
+  .home .my-works .flex-box .my-works-section {
+    padding: 10px 5% 10px 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: solid white 1px;
+  }
+}
+.home .my-works .flex-box .my-works-section .pic-section {
+  width: 100%;
+}
+.home .my-works .flex-box .my-works-section:hover {
+  background-color: #dec8b9;
+  transform: scale(1.02, 1.02);
+}
